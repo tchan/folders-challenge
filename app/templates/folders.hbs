@@ -1,0 +1,5 @@
+<h1>Folders route</h1>
+{{#each model as |folder|}}
+  <h2>{{#link-to 'folders.folder' folder}}{{folder.name}}{{/link-to}}</h2>
+{{/each}}
+{{outlet}}
